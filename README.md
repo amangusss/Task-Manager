@@ -24,5 +24,5 @@ This is a single page Todo application built with HTML, CSS and JavaScript.
 3.Add new tasks, mark them as completed, delete if necessary
 4.Filter tasks by status to display all, active or completed items
 ## Contacts
-My email: aman.nazarkulov@email.com
+My email: aman.nazarkulov@gmail.com
 My telegram: @kindpo4antek
