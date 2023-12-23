@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         localStorage.setItem('userName', data.name);
                         localStorage.setItem('userEmail', data.email);
                         localStorage.setItem('userId', data.id);   
-                        window.location.href = 'index.html';
+                        window.location.href = 'manager.html';
                     }
                 });
             } else {
