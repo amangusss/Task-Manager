@@ -32,11 +32,14 @@ document.addEventListener("DOMContentLoaded", function() {
                     title: "Good job!",
                     text: "Sign Up successful!",
                     icon: "success"
+                }).then((result) => {
+                    if(result.isConfirmed){
+                        localStorage.setItem('userName', data.name);
+                        localStorage.setItem('userEmail', data.email);
+                        localStorage.setItem('userId', data.id);   
+                        window.location.href = 'index.html';
+                    }
                 });
-                localStorage.setItem('userName', data.name);
-                localStorage.setItem('userEmail', data.email);
-                localStorage.setItem('userId', data.id);   
-                window.location.href = 'manager.html';
             } else {
                 Swal.fire({
                     icon: "error",
