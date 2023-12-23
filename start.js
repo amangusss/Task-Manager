@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 localStorage.setItem('userName', data.name);
                 localStorage.setItem('userEmail', data.email);
                 localStorage.setItem('userId', data.id);   
-                window.location.href = 'index.html';
+                window.location.href = 'manager.html';
             } else {
                 Swal.fire({
                     icon: "error",
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     text: "Something went wrong!"
                 }).then((result) => {
                     if(result.isConfirmed){
-                        window.location.href = 'index.html';
+                        window.location.href = 'manager.html';
                     }
                 });
             }
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     if(result.isConfirmed){
                         localStorage.setItem('userId', findUser.id);
                         console.log(localStorage.getItem('userId'))
-                        window.location.href = 'index.html';
+                        window.location.href = 'manager.html';
                     }
                 });
             } else {
