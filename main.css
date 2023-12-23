@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color1: #000;
+    --color2: #fff;
+}
+
+html {
+    font-family: "Raleway", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+#navbar {
+    background-color: var(--color1);
+    color: #fff;
+    padding: 0rem 3rem;
+    display: flex;
+    justify-content: flex-end;
+    width: 100vw;
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+  
+#navbar ul a {
+    display: inline-block;
+    padding: 1.2rem 2rem;
+    text-decoration: none;
+    color: var(--color2);
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+  
+#navbar ul a:hover {
+    transition-duration: 1s;
+    background-color: var(--color2);
+    color: var(--color1);
+}
+
+.container-sub {
+    /* justify-content: space-between; */
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    background-color: #000;
+    height: 50px;
+    align-items: center;
+}
+
+.container-sub .add-new {
+    width: 70%;
+    height: 50px;
+    align-items: center;
+}
+
+.container-sub .add-new .card-new {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.container-sub .add-new .card-new .group1 {
+    align-items: center;
+    padding-left: 1.5rem;
+    text-decoration: none;
+    width: 100%;
+    color: #FFFFFF;
+}
+
+.container-sub .add-new .card-new .group1 i {
+    cursor: pointer;
+    font-size: 1.6rem;
+}
+
+.container-sub .add-new .card-new .group1 input[type=text] {
+    padding-left: 12px;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    font-size: 1.3rem;
+    color: #FFFFFF;
+}
+
+.container-sub .add-new .card-new .group1 input[type=text]:focus {
+    outline: none;
+}
+
+.container-sub .add-new .card-new .group1 input[type=text]::placeholder {
+    font-size: 1.3rem;
+    color: #FFFFFF;
+}
+
+.container-sub .add-new .card-new .group1 input[type=text]:focus::placeholder {
+    color: #dddddd86;
+}
+
+.container-sub .add-new .card-new .group1 div {
+    display: flex;
+    align-items: center;
+}
+
+
+.logout {
+    width: 30%;
+}
+
+.logout a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 30px;
+    padding-right: 1.5rem;
+    height: 50px;
+    color: #fff;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.logout a span:hover {
+    color: #000;
+    transition-duration: 1s;
+    background-color: #fff;
+}
+
+.logout a span {
+    display: flex;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+#myUnOrdList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+}
+
+.check-btn,
+.del-btn {
+    font-size: 19px;
+    cursor: pointer;
+    width: 2em;
+    height: 2em;
+    border-radius: 80%;
+    margin: 0 5px 0 10px;
+}
+
+.todo-item {
+    padding: 0rem 0.5rem;
+}
+
+.fa-trash,
+.fa-check {
+    pointer-events: none;
+}
+
+.completed {
+    transition: 0.2s;
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall {
+    transition: 0.5s;
+    transform: translateY(45rem) rotateZ(45deg);
+    opacity: 0;
+}
+
+button {
+    border: none;
+    outline: none;
+    transition: box-shadow 200ms ease, background-color 200ms ease-in-out;
+    color: #000;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.check-btn,
+.del-btn {
+    font-size: 25px;
+    cursor: pointer;
+    width: 3em;
+    height: 3em;
+    border-radius: 80%;
+    margin: 0 5px;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#taskContainer {
+    min-width: 25%;
+    list-style: none;
+    padding: 0.25em 0.5em;
+    margin: 1rem;
+    font-size: 19px;
+
+}
+
+
+
+.card li {
+    padding: 7px;
+    font-size: 20px;
+    flex: 1;
+    border-radius: 30px;
+    overflow-wrap: anywhere;
+}
+
+div.card {
+    margin: 1rem;
+    font-size: 19px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.25em 0.5em;
+}
+
+.fall {
+    transition: 1s;
+    transform: translateX(90rem);
+    opacity: 0;
+}
+
+/* Для небольших экранов */
+@media (max-width: 576px) {
+    #navbar {
+        padding: 0;
+        justify-content: center; 
+      }
+      
+      #navbar ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row; 
+      }
+      
+      #navbar ul a {
+        padding: 0.5rem 1rem; 
+        font-size: 1rem; 
+        font-weight: 500;
+      }
+      
+      #navbar ul a:hover {
+        transition-duration: 1s;
+        background-color: var(--color2);
+        color: var(--color1);
+        font-weight: 700;
+      }
+
+    .container-sub .add-new .card-new {
+        position: static;
+    }
+
+    .logout a {
+        display: flex;
+        font-size: 1.5rem;
+    }
+
+
+    #myUnOrdList {
+        flex-direction: column;
+    }
+
+    .todo {
+        font-size: 16px;
+    }
+
+    .check-btn,
+    .del-btn {
+        font-size: 25px;
+    }
+}
+
+/* Для больших экранов */
+@media (min-width: 576px) {
+    #navbar {
+        padding: 0rem 2rem;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .logout a {
+        display: flex;
+    }
+
+    #myUnOrdList {
+        flex-direction: row;
+    }
+
+    .todo {
+        font-size: 20px;
+    }
+
+    .check-btn,
+    .del-btn {
+        font-size: 35px;
+    }
+}
+
+@media(max-width: 320px) {
+    .logout a {
+        font-size: 1rem;
+    }
+
+    #todo {
+        font-size: 1rem;
+    }
+
+    .container-sub .add-new .card-new .group1 input[type=text]::placeholder {
+        font-size: 1rem;
+    }
+
+    .container-sub .add-new .card-new .group1 i {
+        font-size: 1rem;
+    }
+    
+}
