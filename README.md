@@ -44,4 +44,5 @@ This is a single page Todo application built with HTML, CSS and JavaScript.
 
 ## Contacts
 My email: aman.nazarkulov@gmail.com
-My telegram: @kindpo4antek
+
+My telegram: <a href="https://t.me/kindpo4antek">@kindpo4antek</a>
