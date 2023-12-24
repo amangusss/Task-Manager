@@ -38,6 +38,10 @@ This is a single page Todo application built with HTML, CSS and JavaScript.
 3.Add new tasks, mark them as completed, delete if necessary
 
 4.Filter tasks by status to display all, active or completed items
+
+### Video Embed
+[![Watch the video](https://img.youtube.com/vi/5f5fq-pLMQQ/maxresdefault.jpg)](https://youtu.be/5f5fq-pLMQQ)
+
 ## Contacts
 My email: aman.nazarkulov@gmail.com
 My telegram: @kindpo4antek
