@@ -43,6 +43,6 @@ This is a single page Todo application built with HTML, CSS and JavaScript.
 [![Watch the video](https://img.youtube.com/vi/5f5fq-pLMQQ/maxresdefault.jpg)](https://youtu.be/5f5fq-pLMQQ)
 
 ## Contacts
-My email: <a href="mailto:aman.nazarkulov@gmail.com">aman.nazarkulov@gmail.com</a>
+My email: <a href="mailto:aman.nazarkulov@gmail.com?">aman.nazarkulov@gmail.com</a>
 
 My telegram: <a href="https://t.me/kindpo4antek">@kindpo4antek</a>
